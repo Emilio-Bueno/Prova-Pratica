@@ -31,7 +31,9 @@
         <label style=color:black; for="libra">Câmbio do dia em Libra:</label>
         <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="Libra">
       </div>
-      <input type="button" onClick="divideBy()" Value="Divide" />
+      <div class="div mt-2">
+        <button class="btn btn-primary" type="button" id="Converter" onclick="Conversor()">Converter</button>
+      </div>
     </form>
     <div class="mt-3">
       <p style="color:whitesmoke;font-size: x-large; font-style:oblique;" id="resultado"></p>
@@ -45,16 +47,16 @@
 </html>
 <script>
     function Conversor(){
-    const botaoConverter = document.getElementById("converter");
-      real = document.getElementById("real").value;
-      dolar = document.getElementById("dolar").value;
-      Resultado = document.getElementById("resultado").innerHTML = real / dolar;
-    }
-    botaoConverter.addEventListener ("click", function () {
-    const valor = parseFloat(valorInput.value);
-    const dolar = unidadeEntradaSelect.value;
-    const resultado = unidadeconvertidaSelect.value;
-    })
+      var valor = parsefloat(document.getElementById)("valor").value;
+      var dolar = parsefloat(document.getElementById)("dolar").value;
+      var euro = parsefloat(document.getElementById)("euro").value;
+      var libra = parsefloat(document.getElementById)("libra").value;
+      var resultado = document.getElementById("resultado");
 
+        
+        
+
+    }
+ 
    
    
