@@ -16,7 +16,7 @@
     <form>
       <div class="form-group">
         <label style=color:black; for="valor">Valor em Real:</label>
-        <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="valor">
+        <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="real">
       </div>
       <div class="form-group">
         <label style=color:black; for="dolar">Câmbio do dia em Dólar:</label>
@@ -25,11 +25,11 @@
       <div class="form-group">
         <div class="form-group">
             <label style=color:black; for="euro">Câmbio do dia em Euro:</label>
-            <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="Euro">
+            <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="euro">
           </div>
           <div class="form-group">
         <label style=color:black; for="libra">Câmbio do dia em Libra:</label>
-        <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="Libra">
+        <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="libra">
       </div>
       <div class="div mt-2">
         <button class="btn btn-primary" type="button" id="Converter" onclick="Conversor()">Converter</button>
@@ -47,14 +47,17 @@
 </html>
 <script>
     function Conversor(){
-      var valor = parsefloat(document.getElementById)("valor").value;
+      var valor = parsefloat(document.getElementById)("real").value;
       var dolar = parsefloat(document.getElementById)("dolar").value;
       var euro = parsefloat(document.getElementById)("euro").value;
       var libra = parsefloat(document.getElementById)("libra").value;
       var resultado = document.getElementById("resultado");
 
-        
-        
+      const convertidoDolar = real / dolar;
+        const convertidoLibra = real / libra;
+        const convertidoEuro = real / euro;
+
+        resultado.innerHTML = `${convertidoDolar} ${convertidoEuro} ${convertidoLibra}`;
 
     }
  
