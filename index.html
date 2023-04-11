@@ -15,22 +15,17 @@
         <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="valor">
       </div>
       <div class="form-group">
-        <label style= color:black; for="unidade-entrada">Quero Converter Para:</label>
-        <div class="dropdown" id="">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Converter Para:
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" onclick="euro">Euro</a></li>
-              <li><a class="dropdown-item" href="#" onclick="dolar">Dólar</a></li>
-              <li><a class="dropdown-item" href="#" onclick="libra">Libra</a></li>
-            </ul>
-          </div>
-        </select>
+        <label style=color:black; for="dolar">Câmbio do dia em Dólar:</label>
+        <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="dolar">
       </div>
       <div class="form-group">
-        <label style=color:black; for="valor">Câmbio do dia:</label>
-        <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="cambio">
+        <div class="form-group">
+            <label style=color:black; for="euro">Câmbio do dia em Euro:</label>
+            <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="Euro">
+          </div>
+          <div class="form-group">
+        <label style=color:black; for="libra">Câmbio do dia em Libra:</label>
+        <input style ="border:1px solid black; border-radius: 5px"; type="number" class="form-control" id="Libra">
       </div>
       <button style="background-color:whitesmoke; color: black; border:2px solid black;" type ="button" class="btn btn-primary mt-3" id="converter">Converter</button>
     </form>
@@ -41,8 +36,15 @@
 </html>
 <script>
     function Conversor(){
-        var valor = document.getElementById("valor").value;
-    if 
-    }
+    var valor = document.getElementById("valor").value;
+    var dolar = document.getElementById("dolar").value;
+    var euro = document.getElementById("euro").value;
+    var libra = document.getElementById("libra").value;
+    const resultadoC= document.getElementById("resultado");
+    const botaoConverter = document.getElementById("converter");
+
+
+  }
+    
    
 
